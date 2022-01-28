@@ -5,11 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Ping coming soon page</title>
+    <script
+      src="https://kit.fontawesome.com/32f374c92f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="py-24 font-franklin text-xl">
     <div id="app">
-      We are launching soon! Subscribe and get notified Notify Me &copy;
-      Copyright Ping. All rights reserved.
+      <img class="mx-auto" src="images/logo.svg" alt="logo" />
+      <h1 class="text-center pt-10 pb-5">
+        We are launching <span class="font-bold">soon!</span>
+      </h1>
+      <p class="text-center">Subscribe and get notified</p>
+      <div>
+        <input class="block mx-auto" type="email" name="email" id="email" />
+        <button class="block mx-auto">Notify Me</button>
+      </div>
+      <img class="mx-auto w-9/12" src="images/illustration-dashboard.png" alt="hero-image" />
+      <div class="flex justify-center items-center">
+        <div
+          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div
+          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+        >
+          <i class="fab fa-twitter"></i>
+        </div>
+        <div
+          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+        >
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <p class="text-center">&copy; Copyright Ping. All rights reserved.</p>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
