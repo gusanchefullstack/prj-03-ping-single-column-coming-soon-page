@@ -16,25 +16,31 @@
       rel="stylesheet"
     />
   </head>
-  <body class="py-24 font-franklin text-xl">
-    <div id="app">
+  <body>
+    <div id="app" class="py-20 font-franklin text-xl">
       <img class="mx-auto" src="images/logo.svg" alt="logo" />
-      <h1 class="text-center pt-10 pb-2 text-gray">
+      <h1 class="text-center text-2xl pt-10 pb-2 text-gray">
         We are launching <span class="font-bold text-VeryDarkBlue">soon!</span>
       </h1>
-      <p class="text-center my-4 text-xs text-VeryDarkBlue">
+      <p class="text-center my-4 text-sm text-VeryDarkBlue">
         Subscribe and get notified
       </p>
       <div>
         <input
-          class="block mx-auto w-9/12 rounded-full py-3 border border-paleBlue text-sm px-8 mt-8"
+          class="block border-paleBlue mx-auto w-9/12 rounded-full py-3 border text-sm px-8 mt-8 outline-none"
           type="email"
           name="email"
           id="email"
           placeholder="Your email address"
         />
-        <button
-          class="block mx-auto bg-blue text-white text-sm font-bold w-9/12 rounded-full py-3 shadow-paleBlue shadow-lg mt-3 mb-8"
+        <span id="email-missing" class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6"
+          >Whoops! It looks like you forgot to add your email</span
+        >
+        <span id="email-invalid" class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6"
+          >Please provide a valid email address</span
+        >
+        <button id="submit-button"
+          class="block mx-auto bg-blue text-white text-sm font-bold w-9/12 rounded-full py-3 shadow-paleBlue shadow-lg mt-3 mb-8 hover:cursor-pointer hover:opacity-80"
         >
           Notify Me
         </button>
@@ -46,17 +52,17 @@
       />
       <div class="flex justify-center items-center space-x-4">
         <div
-          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue hover:cursor-pointer hover:text-white hover:bg-blue"
         >
           <i class="fab fa-facebook-f fa-xs"></i>
         </div>
         <div
-          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue hover:cursor-pointer hover:text-white hover:bg-blue"
         >
           <i class="fab fa-twitter fa-xs"></i>
         </div>
         <div
-          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue hover:cursor-pointer hover:text-white hover:bg-blue"
         >
           <i class="fab fa-instagram fa-xs"></i>
         </div>
