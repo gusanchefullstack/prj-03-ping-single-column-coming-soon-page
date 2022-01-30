@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor.io]()
+- Solution URL: [FrontendMentor.io](https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-a7JpGUOhV)
 - Live Site URL: [Vercel](https://prj-03-ping-single-column-coming-soon-page.vercel.app/)
 
 ## My process
