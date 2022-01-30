@@ -19,33 +19,51 @@
   <body class="py-24 font-franklin text-xl">
     <div id="app">
       <img class="mx-auto" src="images/logo.svg" alt="logo" />
-      <h1 class="text-center pt-10 pb-5">
-        We are launching <span class="font-bold">soon!</span>
+      <h1 class="text-center pt-10 pb-2 text-gray">
+        We are launching <span class="font-bold text-VeryDarkBlue">soon!</span>
       </h1>
-      <p class="text-center">Subscribe and get notified</p>
+      <p class="text-center my-4 text-xs text-VeryDarkBlue">
+        Subscribe and get notified
+      </p>
       <div>
-        <input class="block mx-auto" type="email" name="email" id="email" />
-        <button class="block mx-auto">Notify Me</button>
+        <input
+          class="block mx-auto w-9/12 rounded-full py-3 border border-paleBlue text-sm px-8 mt-8"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Your email address"
+        />
+        <button
+          class="block mx-auto bg-blue text-white text-sm font-bold w-9/12 rounded-full py-3 shadow-paleBlue shadow-lg mt-3 mb-8"
+        >
+          Notify Me
+        </button>
       </div>
-      <img class="mx-auto w-9/12" src="images/illustration-dashboard.png" alt="hero-image" />
-      <div class="flex justify-center items-center">
+      <img
+        class="mx-auto w-9/12 mt-16 mb-28"
+        src="images/illustration-dashboard.png"
+        alt="hero-image"
+      />
+      <div class="flex justify-center items-center space-x-4">
         <div
-          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
         >
-          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-facebook-f fa-xs"></i>
         </div>
         <div
-          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
         >
-          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitter fa-xs"></i>
         </div>
         <div
-          class="h-8 w-8 rounded-full border border-blue-300 flex justify-center items-center"
+          class="h-8 w-8 rounded-full border border-paleBlue flex justify-center items-center text-blue"
         >
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram fa-xs"></i>
         </div>
       </div>
-      <p class="text-center">&copy; Copyright Ping. All rights reserved.</p>
+      <p class="text-center text-gray text-xs my-8">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
