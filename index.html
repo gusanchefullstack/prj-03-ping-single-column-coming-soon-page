@@ -19,34 +19,41 @@
   <body>
     <div id="app" class="py-20 font-franklin text-xl">
       <img class="mx-auto" src="images/logo.svg" alt="logo" />
-      <h1 class="text-center text-2xl pt-10 pb-2 text-gray">
+      <h1 class="text-center text-2xl lg:text-5xl pt-10 pb-2 text-gray">
         We are launching <span class="font-bold text-VeryDarkBlue">soon!</span>
       </h1>
-      <p class="text-center my-4 text-sm text-VeryDarkBlue">
+      <p class="text-center my-4 lg:my-10 text-sm lg:text-xl text-VeryDarkBlue">
         Subscribe and get notified
       </p>
-      <div>
+      <div
+        class="lg:flex lg:flex-nowrap lg:justify-center lg:items-center lg:space-x-4 lg:relative lg:px-64"
+      >
         <input
-          class="block border-paleBlue mx-auto w-9/12 rounded-full py-3 border text-sm px-8 mt-8 outline-none"
+          class="block border-paleBlue mx-auto lg:mx-0 w-9/12 md:w-5/12 rounded-full py-3  border text-sm px-8 mt-8 lg:mt-0 outline-none lg:basis-2/5"
           type="email"
           name="email"
           id="email"
           placeholder="Your email address"
         />
-        <span id="email-missing" class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6"
+        <span
+          id="email-missing"
+          class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6 lg:absolute lg:left-[430px] lg:top-12"
           >Whoops! It looks like you forgot to add your email</span
         >
-        <span id="email-invalid" class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6"
+        <span
+          id="email-invalid"
+          class="hidden mx-auto italic text-xs text-center text-lightRed mt-2 mb-6 lg:absolute lg:left-[430px] lg:top-12"
           >Please provide a valid email address</span
         >
-        <button id="submit-button"
-          class="block mx-auto bg-blue text-white text-sm font-bold w-9/12 rounded-full py-3 shadow-paleBlue shadow-lg mt-3 mb-8 hover:cursor-pointer hover:opacity-80"
+        <button
+          id="submit-button"
+          class="block mx-auto lg:mx-0 bg-blue text-white text-sm font-bold w-9/12 md:w-5/12 rounded-full py-3 shadow-paleBlue shadow-lg mt-3 lg:mt-0 mb-8 lg:mb-0 hover:cursor-pointer hover:opacity-80 lg:basis-1/5"
         >
           Notify Me
         </button>
       </div>
       <img
-        class="mx-auto w-9/12 mt-16 mb-28"
+        class="mx-auto w-9/12 lg:w-5/12 mt-16 lg:mt-20 mb-28"
         src="images/illustration-dashboard.png"
         alt="hero-image"
       />
