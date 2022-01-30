@@ -9,18 +9,17 @@ const submitButton = document.getElementById("submit-button");
 emailInput.addEventListener("focus", (e) => {
   emailMissingLabel.classList.replace("block", "hidden");
   emailInvalidLabel.classList.replace("block", "hidden");
-  emailInput.classList.replace("border-lightRed", "border-paleBlue");
+  emailInput.style.borderColor ="hsl(223, 100%, 88%)";
 });
 
 submitButton.addEventListener("click", (e) => {
   if (!emailInput.value) {
     emailMissingLabel.classList.replace("hidden", "block");
-    emailInput.classList.remove("border-paleBlue");
-    emailInput.classList.add("border-lightRed");
+    emailInput.style.borderColor = "hsl(354, 100%, 66%)";
+
   } else if (!validEmailFormat.test(emailInput.value)) {
     emailInvalidLabel.classList.replace("hidden", "block");
-    emailInput.classList.remove("border-paleBlue");
-    emailInput.classList.add("border-lightRed");
+    emailInput.style.borderColor = "hsl(354, 100%, 66%)";
   } else {
     emailInput.value = "";
   }
